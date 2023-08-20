@@ -32,7 +32,7 @@ import javax.servlet.http.HttpServletResponse;
         {
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("loaded driver succesfull");   
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","200160107092");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","{your_password}");
             Statement st=cn.createStatement();
             st.executeUpdate("create database if not exists student");
             st.executeUpdate("use student");
